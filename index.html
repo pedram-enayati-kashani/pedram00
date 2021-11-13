@@ -9,17 +9,32 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            <ul>
-                <li>home</li>
-                <li>pedram</li>
-                <li>mehdi</li>
-                <li>mojtame fani</li>
-            </ul>
-        </h1>
-    </header>
-
+    <script>
+        //program1
+        let string="red";
+        let arrays=["red","green","blue","yellow"];
+        document.write("string is in value:",arrays.indexOf(string));
+        //program 2
+        let srting2="red";
+        document.write("<br><br>string with string2 is equal:",string===srting2);
+        //program3
+        let numbers="0123456789";
+        number1=numbers.slice(0,6);
+        number2=numbers.slice(6,10);
+        number3=number1.replace("012345","******");
+        let codingley="";
+        codingley=number3+number2;
+        document.write("<br><br>the codingley is:",codingley);
+        //program4
+        let array1=[51,32,23,44,15,27];
+        document.write("<br><br>",array1);
+        number4=array1.sort();
+        document.write("<br><br>the smallest number is:",number4.slice(0,1));
+        //program5
+        document.write("<br><br>the largest number is :",number4.slice(5,6));
+        //program6
+        
+    </script>
 </body>
 
 </html>
