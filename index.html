@@ -10,30 +10,49 @@
 
 <body>
     <script>
-        //program1
-        let string="red";
-        let arrays=["red","green","blue","yellow"];
-        document.write("string is in value:",arrays.indexOf(string));
-        //program 2
-        let srting2="red";
-        document.write("<br><br>string with string2 is equal:",string===srting2);
-        //program3
-        let numbers="0123456789";
-        number1=numbers.slice(0,6);
-        number2=numbers.slice(6,10);
-        number3=number1.replace("012345","******");
-        let codingley="";
-        codingley=number3+number2;
-        document.write("<br><br>the codingley is:",codingley);
-        //program4
-        let array1=[51,32,23,44,15,27];
-        document.write("<br><br>",array1);
-        number4=array1.sort();
-        document.write("<br><br>the smallest number is:",number4.slice(0,1));
-        //program5
-        document.write("<br><br>the largest number is :",number4.slice(5,6));
-        //program6
-        
+       function isThere(myInputArray, myInputText) {
+  return myInputArray.indexOf(myInputText) > -1;
+}
+
+document.write(isThere(["test", "secondTest", "thirdTest"], "sefffcondTest"));
+
+// exercise two
+
+// exercise  three
+function nationalCode(inputNationalCode) {
+  let finalString = inputNationalCode.replace(
+    inputNationalCode.slice(0, 6),
+    "******"
+  );
+  document.write("<br/>", finalString);
+}
+
+nationalCode("1234567890");
+
+// exercise four
+
+const findMin = (myInPutArray) => {
+  let sortedArray = myInPutArray.sort();
+  console.log("sorted array is :", sortedArray);
+  return sortedArray[0];
+};
+
+document.write("<br/>", findMin([10, 80, 44, 200, 30, 20]));
+
+// exercise five
+
+let myArray = [40, 70, 30, 20, 190];
+
+console.log("myArray is :", myArray[myArray.length - 1]);
+
+//   exercise six
+
+function concatArrays(arr1, arr2) {
+  document.write(" result is :", arr1.concat(arr2));
+  console.log(" coacted array is :", arr1.concat(arr2));
+}
+
+concatArrays([10, 15, 18], [20, 50, 30]);
     </script>
 </body>
 
